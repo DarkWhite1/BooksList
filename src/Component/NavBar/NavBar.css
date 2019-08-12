@@ -1,0 +1,83 @@
+/* NavBar */
+.header {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    width: 100%;
+    margin: 0px;
+}
+
+nav ul {
+    background-color : #eee;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    float: right;
+}
+
+nav ul li .Link {
+    display: flex;
+    text-decoration: none;
+    min-height: 12px;
+    text-align : center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+nav ul .left-navBar {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    padding-left: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+.Link:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
+
+nav ul li .dropDownIcon{
+    display:none;
+}
+
+/* Signe-In-Nav */
+nav .signInNav {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav .signInNav .signinForm {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    float:right;
+}
+
+.Input-Field {
+    display: inline-block;
+    text-align : center;
+    padding: 3px;
+    padding-top: 0px;
+    padding-right: 5px;
+}
+
+
+/* Mobile Css */
+@media screen and (max-width: 680px){
+    ul li:not(:nth-child(1)) {
+        display: none;
+    }
+    nav ul li .dropDownIcon{
+        display:block;
+        float: right;
+    }
+    }
+
