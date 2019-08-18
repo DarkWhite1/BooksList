@@ -21,14 +21,13 @@ class SignedOutLinks extends Component{
 
 
     render() {
-        const {authError} = this.props;
         return (
             <div className="Header">
             <nav>
                 <div className="signInNav">
             <form onSubmit={this.onFormSubmit} className="signinForm">
             <div className="Input-Field">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email : </label>
                 <input type="email" id="email" onChange={this.onInputChange}/>
             </div>
 
@@ -38,7 +37,6 @@ class SignedOutLinks extends Component{
             </div>
             <button className="Input-Field">Sign In</button>
             <div>
-                {authError ? <p>{authError}</p> : null}
             </div>
         </form> 
         </div>
@@ -51,7 +49,6 @@ class SignedOutLinks extends Component{
 
 const mapStateToProps = (state) => {
     return{
-        authError: state.auth.authError
     }
 }
 const mapDispatchToProps = (dispatch) => {

@@ -8,9 +8,9 @@ const SignedInLinks = (props) => {
         <div className="Header">
             <nav>
                 <ul>
-                    <li><Link className="Link" to ='/Booklist'>Book List</Link></li>
+                    <li><Link className="Link" to ='/BooksList'>Book List</Link></li>
                     <li><Link className="Link" to ='/Profile'>Profile</Link></li>
-                    <li><Link className="Link" onClick={props.signOut}>Logout</Link></li>
+                    <li><Link className="Link" onClick={props.signOut} to='/'>Logout</Link></li>
                     <li><Link className="Link dropDownIcon" to="">&#9776;</Link></li>
                     <p className="left-navBar" >LOGO</p>
                 </ul>
